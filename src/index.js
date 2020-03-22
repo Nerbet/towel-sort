@@ -1,9 +1,13 @@
 module.exports = function towelSort (matrix) {
+if(matrix == undefined || matrix ==[])
+    {
+        return [];
+    }
     var digits = [];
     m = matrix.length;
-    n = matrix[0].length;
     for(var i=0; i<m; i++)
     {
+        n = matrix[i].length;
         if(i%2==0)
         {
             for(var j=0; j<n; j++)
@@ -20,6 +24,10 @@ module.exports = function towelSort (matrix) {
             }
         
         }
+    }
+    for(var i =0; i<digits.length;i++)
+    {
+        console.log(digits[i]);
     }
     return digits;
   }
