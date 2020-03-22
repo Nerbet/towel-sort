@@ -14,7 +14,7 @@ module.exports = function towelSort (matrix) {
         }
         else
         {
-            for(var j=2; j>-1; j--)
+            for(var j=n-1; j>-1; j--)
             {
                 digits.push(matrix[i][j]);
             }
